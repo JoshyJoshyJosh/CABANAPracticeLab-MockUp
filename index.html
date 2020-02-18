@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
+    <script src = "js/index.js"></script>
+</head>
+<body>
+    <form id="mock">
+        <div>
+          <label for="login">Login </label>
+          <input type="text" id="login" name="login"></input>
+        </div>
+        <div>
+          <label for="pass">Password </label>
+          <input type="password" id="pass" name="pass"></input>
+        </div>
+        <div>
+          <label for="conf">Confirm Password </label>
+          <input type="password" id="conf" name="conf" onchange = "passwordVal()"></input>
+        </div>
+        <div>
+            Gender  <select id="gender" class="gender">
+                <option selected="selected" value="">male</option>
+                <option value="0">female</option>
+                </select>
+          </div>
+        <div>
+          <label for="email">Email </label>
+          <input type="email" id="email" name="email" onchange = "emailVal()"></input>
+        </div>
+        <div>
+          <input type="submit" value="Register" onclick="validate()"/>
+        </div>
+
+        <h5 id="pww"></h5>
+        <h5 id="mail"></h5>
+      </form>
+</body>
+</html>
